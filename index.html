@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+ <header>
+        <img class="resturangensLogga" src="Images/Lucky Duck Logo.png" alt="bild på resturangens logga">
+
+        <form class="språkNav">
+            <label for="språkval" class="väljSpråkLbl">Välj Språk</label>
+            <input type="checkbox" id="språkval" hidden/>
+
+            <section class="språk_dropdown">
+                <label for="lang_sv" class="språkLabel">Svenska
+                    <input type="radio" id="lang_sv" name="language" value="sv"/>
+                </label>
+
+                <label for="lang_en" class="språkLabel">Engelska
+                    <input type="radio" id="lang_en" name="language" value="en"/>
+                </label>
+            </section>
+        </form>
+
+
+        <h1 class="rubrik">Menu</h1>
+
+        <nav class="varukorgNav">
+            <label for="varukorg">
+                <p class="antalBeställningar" hidden>0</p>
+                <img class="varukorgBild" src="Images/varukorg.png" alt="varukorg">
+            </label>
+            <input type="checkbox" hidden id="varukorg"/>
+
+            <section class="varukorgInnehåll">
+                <h2 >Varukorg</h2>
+                <ul class="varukorgUL">
+                    <!-- Här ska varorna i varukorgen finnas -->
+
+                </ul>
+                <section class="betalaBtn_total">
+                    <button class="betalaKnapp">Betala</button>
+                    <p class="attBetala">Total: </p>
+                </section>
+                <p class="betalatMeddelande" hidden>Du har betalat!</p>
+            </section>
+        </nav>
+    </header>
+
+    <section class="filter_main">
+        <nav class="filter">
+            <h2>Filter</h2>
+            
+            <div class="fieldset-row">
+                <fieldset class="priceFilter">
+                    <legend>Prisfilter</legend>
+                    <!-- Pris stigande/fallande -->
+
+                    <label for="price_increasing" class="priceFilterLabel">Stigande
+                        <input type="radio" id="price_increasing" name="price" value="inc"/>
+                    </label>
+
+                    <label for="price_decreasing" class="priceFilterLabel">Fallande
+                        <input type="radio" id="price_decreasing" name="price" value="dec" checked/>
+                    </label>
+
+                    <!-- <label for="priceRange" id="priceValue">Price: 100 Kr</label>
+                    <input 
+                        type="range" 
+                        id="priceRange" 
+                        name="priceRange"
+                        min="85" 
+                        max="259" 
+                        step="10" 
+                        value="100"> -->
+                </fieldset>
+
+                <fieldset>
+                    <legend>Köttfilter</legend>
+
+                    <label for="meat_beef" class="meatlabel">Nötkött
+                        <input type="checkbox" id="meat_beef" name="meat" value="beef"/>
+                    </label>
+
+                    <label for="meat_chicken" class="meatlabel">Kyckling
+                        <input type="checkbox" id="meat_chicken" name="meat" value="chicken"/>
+                    </label>
+
+                    <label for="meat_pork" class="meatlabel">Fläskkött
+                        <input type="checkbox" id="meat_pork" name="meat" value="pork"/>
+                    </label>
+
+                    <label for="meat_fish" class="meatlabel">Fisk
+                        <input type="checkbox" id="meat_fish" name="meat" value="fish"/>
+                    </label>
+
+                    <label for="meat_veg" class="meatlabel">Vegetarisk
+                        <input type="checkbox" id="meat_veg" name="meat" value="vegetarian"/>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Allergifilter</legend>
+
+                    <label for="allergy_gluten" class="allergylabel">Gluten
+                        <input type="checkbox" id="allergy_gluten" name="allergy" value="Gluten"/>
+                    </label>
+
+                    <label for="allergy_lactose" class="allergylabel">Laktos
+                        <input type="checkbox" id="allergy_lactose" name="allergy" value="Lactose"/>
+                    </label>
+
+                    <label for="allergy_egg" class="allergylabel">Ägg
+                        <input type="checkbox" id="allergy_egg" name="allergy" value="Egg"/>
+                    </label>
+
+                    <label for="allergy_shellfish" class="allergylabel">Skaldjur
+                        <input type="checkbox" id="allergy_shellfish" name="allergy" value="Shellfish"/>
+                    </label>
+                </fieldset>
+            </div>
+        </nav>
+
+        <main>
+
+            <!-- Här ska maträtterna vara -->
+
+        </main>
+    </section>
+</body>
+</html>

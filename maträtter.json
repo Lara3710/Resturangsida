@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "namn": {
+            "en": "Pork Tenderloin Plank Steak",
+            "sv": "Fläskfiléplanka"
+        },
+        "beskrivning": {
+            "en": "Duchesse potatoes, a redwine reduction, béarnaise and fried vegetables",
+            "sv": "Duchesse mos, rödvinssky, bearnaise och stekta grönsaker"
+        },
+        "pris": 149,
+        "meat": [
+            "pork"
+        ],
+        "allergier": [
+            "Lactose",
+            "Gluten",
+            "Egg"
+        ]
+    },
+    
+    {
+        "id": 2,
+        "namn": {
+            "en": "Biff Rydberg",
+            "sv": "Biff Rydberg"
+        },
+        "beskrivning": {
+            "en": "Diced beef tenderloin, potatoes and onion, served with dijonmustard and raw egg yolk",
+            "sv": "Tärnad oxfilé, potatis och gullök, serveras med dijonsenapskräm och rå äggula"
+        },
+        "pris": 175,
+        "meat": [
+            "beef"
+        ],
+        "allergier": [
+            "Egg",
+            "Lactose"
+        ]
+    },
+    
+    {
+        "id": 3,
+        "namn": {
+            "en": "Spicy Cheeseburger",
+            "sv": "Spicy Cheeseburger"
+        },
+        "beskrivning": {
+            "en": "180gram prime rib burger with lettuce, tomato, pickled red onion, cheddar cheese with jalapeños and barbecue sauce in brioche bread with fries and smokey ranch-aioli",
+            "sv": "180gram högrevsburgare med sallad, tomat, picklade rödlök, cheddarost med jalapeños och barbecuesås i briochebröd med pommes och rökig ranch-aioli"
+        },
+        "pris": 155,
+        "meat": [
+            "beef"
+        ],
+        "allergier": [
+            "Lactose",
+            "Gluten",
+            "Egg"
+        ]
+    },
+    
+    {
+        "id": 4,
+        "namn": {
+            "en": "Halloumi Burger",
+            "sv": "Halloumiburgare"
+        },
+        "beskrivning": {
+            "en": "Lettuce, tomato, red onion and guacamole in brioche bread with fries and aioli",
+            "sv": "Sallad, tomat, rödlök och guacamole i briochebröd med pommes och aioli"
+        },
+        "pris": 155,
+        "meat": [
+            "vegetarian"
+        ],
+        "allergier": [
+            "Lactose",
+            "Gluten",
+            "Egg"
+        ]
+    },
+    
+    {
+        "id": 5,
+        "namn": {
+            "en": "Fish'n Chips",
+            "sv": "Fish'n Chips"
+        },
+        "beskrivning": {
+            "en": "Beer-batter breaded cod loins with dill-aioli, seared lemon and fries",
+            "sv": "“Beer-batter” panerad torskrygg med dill-aioli, halstrad citron och pommes"
+        },
+        "pris": 149,
+        "meat": [
+            "fish"
+        ],
+        "allergier": [
+            "Gluten",
+            "Egg"
+        ]
+    },
+    
+    {
+        "id": 6,
+        "namn": {
+            "en": "Schnitzel",
+            "sv": "Husets Schnitzel"
+        },
+        "beskrivning": {
+            "en": "200 grams of meat “Borås biggest” served with lemon, capers, anchovy, herb butter and a redwine reduction with fried potatoes",
+            "sv": "200 gram välbankad schnitzel “Borås största” med citron, kapris, ansjovis, kryddsmör och rödvinssky serverad med stekt potatis"
+        },
+        "pris": 175,
+        "meat": [
+            "pork"
+        ],
+        "allergier": [
+            "Lactose",
+            "Gluten"
+        ]
+    },
+    
+    {
+        "id": 7,
+        "namn": {
+            "en": "Caesar Salad",
+            "sv": "Ceasarsallad"
+        },
+        "beskrivning": {
+            "en": "Grilled chicken, bacon, croutons, parmesan and caesardressing",
+            "sv": "Varm kyckling, bacon, krutonger, parmesan samt ceasardressing"
+        },
+        "pris": 85,
+        "meat": [
+            "chicken",
+            "pork"
+        ],
+        "allergier": [
+            "Lactose",
+            "Gluten",
+            "Egg"
+        ]
+    },
+    
+    {
+        "id": 8,
+        "namn": {
+            "en": "Salmonsalad with Quinoa",
+            "sv": "Laxsallad med quinoa"
+        },
+        "beskrivning": {
+            "en": "Grilled salmon with quinoa, cocktail tomatoes, julianne carrot, mixed salad, red onion with vinaigrette",
+            "sv": "Grillad lax med quinoa, cocktailsallad, blandad sallad, morot julienne, rödlök med vinägrett"
+        },
+        "pris": 159,
+        "meat": [
+            "fish"
+        ],
+        "allergier": [
+            
+        ]
+    },
+    
+    {
+        "id": 9,
+        "namn": {
+            "en": "Creamy Chicken Pasta",
+            "sv": "Krämig Kycklingpasta"
+        },
+        "beskrivning": {
+            "en": "Sundried tomatoes, basil, vegetables and parmesan",
+            "sv": "Soltorkade tomater, basilika, grönsaker och parmesan"
+        },
+        "pris": 169,
+        "meat": [
+            "chicken"
+        ],
+        "allergier": [
+            "Lactose",
+            "Gluten"
+        ]
+    },
+    
+    {
+        "id": 10,
+        "namn": {
+            "en": "Mussels à la Cava",
+            "sv": "Musslor àl Cava"
+        },
+        "beskrivning": {
+            "en": "Steamed mussels in a creamy cava sauce, topped with cream fraîche and jalapeños, served with fries and aioli",
+            "sv": "Ångkokta musslor i en krämig sås gjord på cava, toppas med cream fraîche och jalapeños, serveras med pommes och aioli"
+        },
+        "pris": 189,
+        "meat": [
+            
+        ],
+        "allergier": [
+            "Lactose",
+            "Egg",
+            "Shellfish"
+        ]
+    },
+    
+    {
+        "id": 11,
+        "namn": {
+            "en": "Grilled Beef Tenderloin",
+            "sv": "Grillad Oxfilé"
+        },
+        "beskrivning": {
+            "en": "200 gram beef tenderloin, redwine reduction, fried vegetables and potato gratin (served with fries and béarnaise)",
+            "sv": "200 gram oxfilé, rödvinssås, frästa grönsaker serveras med potatisgratäng (går att få med pommes och bearnaise)"
+        },
+        "pris": 259,
+        "meat": [
+            "beef"
+        ],
+        "allergier": [
+            "Lactose",
+            "Egg"
+        ]
+    }
+    
+]

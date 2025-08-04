@@ -1,0 +1,503 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    min-width: 100vw;
+    max-width: 80ch;
+    height: 100vh;
+    background-color: lightgrey;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+    padding: 1rem 3%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    user-select: none;
+    top: 0;
+    z-index: 100;
+}
+
+header .resturangensLogga{
+    max-height: 4.5rem;
+    height: auto;
+    user-select: none;
+}
+
+header .rubrik {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: honeydew;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    align-self: center;
+    flex-basis: 30%;
+    text-align: flex-start;
+}
+
+.språkNav{
+    display: flex;
+    justify-content: center;
+    flex-basis: 15%;
+}
+
+.väljSpråkLbl{
+    background-color: lightgray;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+
+    border-radius: 4px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.språk_dropdown{
+    max-height: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: lightgray;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 2.5rem;
+    transition: max-height .25s ease-in, padding 0.3s ease-in, background-color 0.25s linear;
+}
+
+#språkval:checked ~ .språk_dropdown{
+    max-height: 80vh;
+    padding: 1%;
+}
+
+.språkLabel{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+
+.språkLabel input {
+    margin-right: 0.5rem;
+}
+
+.varukorgNav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-basis: 15%;
+}
+
+.varukorgBild{
+    height: auto;
+    max-width: 3rem;
+    user-select: none;
+    filter: brightness(0) invert(1);
+}
+
+.antalBeställningar{
+    background-color: crimson;
+    color: white;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -10%;
+    margin: -0.7rem 0 0 1.8rem;
+    font-size: small;
+    font-weight: bold;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.varukorgInnehåll{
+    background-color: lightgray;
+    border-radius: 8px;
+    max-height: 0;
+    overflow: hidden;
+    position: fixed;
+    margin-left: auto;
+    width: 20rem;
+    margin-top: 4rem;
+    user-select: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition:
+        max-height 0.3s ease-in,
+        padding 0.3s ease-in,
+        background-color 0.3s linear;
+}
+
+#varukorg:checked ~ .varukorgInnehåll {
+    max-height: 80vh;
+    padding: 1%;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.varukorgInnehåll h2 {
+    padding: 0.7rem;
+    border-bottom: 1px solid darkgray;
+    font-size: x-large;
+    font-weight: 600;
+}
+.varukorgUL{
+    padding: 0;
+    list-style: none;
+}
+
+.varukorgsMaträtt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 3% 0;
+}
+
+.varukorgsMaträtt h3 {
+    margin-bottom: 0.3rem;
+}
+.varukorgsMaträtt p {
+    font-size: 0.9rem;
+}
+
+.varukorgMaträttBtns{
+    display: flex;
+    align-items: center;
+}
+
+.varukorgMaträttBtn{
+    margin: 5%;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    height: 50%;
+    padding: 0.3rem 0.2rem;
+    margin: 0 0.4rem;
+}
+
+.betalaBtn_total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.betalaKnapp {
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1.4rem;
+    font-weight: 700;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+}
+
+.attBetala {
+    font-weight: 600;
+    color: black;
+}
+
+.betalatMeddelande {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: cornflowerblue;
+    margin: 0.7rem 0;
+    border-radius: 4px;
+}
+
+.filter_main{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+    width: fit-content;
+    padding: 15%;
+    margin: 10%;
+}
+
+.filter h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid darkslategray;
+    padding-bottom: 0.1rem;
+}
+
+.filter fieldset{
+    border: none;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+legend {
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+    padding-left: 0.4rem;
+    border-left: 3px solid darkslategray;
+}
+
+.priceFilterLabel, .meatlabel, .allergylabel {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    padding: 0.1rem 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+#priceValue {
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: 500;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    accent-color: cornflowerblue;
+}
+
+fieldset input{
+    margin-right: 0.5rem;
+}
+
+/* Maträtter */
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 95%;
+    justify-self: center;
+}
+
+.maträtt{
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    background-color: white;
+    border-radius: 12px;
+    padding: 5%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.maträtt h2 {
+    padding: 0.5rem 0;
+    border-bottom: 2px solid darkslategray;
+    margin: 0 1rem;
+}
+
+.maträtt p {
+    padding: 0.5rem 1.2rem;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.maträtt_detaljer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 1.2rem;
+}
+
+
+.maträtt h3 {
+    margin-top: 0.5rem;
+}
+
+.kött{
+    display: flex;
+}
+
+.allergier{
+    display: flex;
+}
+
+.maträtt_detaljer{
+    display: flex;
+}
+
+.money {
+    font-size: 1.25rem;
+    color: crimson;
+    align-self: flex-end;
+    background-color: #FFF0F0 ;
+    padding: 0.4rem 0.8rem;
+    border-radius: 12px;
+    text-wrap: nowrap;
+}
+
+.mealBtn{
+    border-radius: 20px;
+    border: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: cornflowerblue;
+    font-size: large;
+}
+
+.porkImg, .beefImg, .chickenImg, .fishImg, .vegImg,
+.glutenImg, .lactoseImg, .eggImg, .shellfishImg{
+    align-self: center;
+    height: 1.5rem;
+    width: auto;
+    margin: 0.1rem 0.3rem;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+@media (max-width: 1000px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 2rem;
+        width: 92%;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2%; 
+    }
+    .språkNav {
+        flex-basis: 16%;
+    }
+
+    .språk_dropdown{
+        max-width: max-content;
+        margin-left: 9.5rem;
+    }
+
+    .rubrik
+    {
+        flex-basis: 40%;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    .varukorgNav {
+        align-items: flex-start;
+        margin-top: 0.5rem;
+        flex-basis: 16%;
+    }
+
+    .varukorgInnehåll {
+        margin-top: 3rem;
+        width: 60vh;
+        font-size: 1.5rem;
+    }
+
+    .varukorgsMaträtt{
+        margin: 1rem;
+    }
+
+    .varukorgInnehåll h2{
+        font-size: 2rem;
+    }
+
+    .betalaBtn_total{
+        margin: 0.2rem 1rem;
+    }
+
+    .betalaKnapp {
+      margin: 0.5rem 0;
+      width: 50%;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .språk_dropdown, .varukorgInnehåll {
+      left: 5%;
+      right: 5%;
+    }
+
+    .filter_main {
+        grid-template-columns: 1fr;
+    }
+
+    .filter {
+        margin: 1rem auto;
+        padding: 2rem;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .fieldset-row{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 0.5rem 2rem;
+    }
+
+    .filter legend{
+        border-left:none;
+        border-bottom: 3px solid darkslategray;
+    }
+
+    main {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin: auto;
+    }
+
+    .maträtt {
+      margin: 1rem auto;
+      width: 90%;
+      font-size: 1.5rem;
+    }
+
+    .mealBtn {
+      font-weight: 700;
+      font-size: 2rem;
+      height: 2.5rem;
+    }
+
+
+    .money {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+  }

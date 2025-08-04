@@ -1,0 +1,120 @@
+{
+    "en": {
+        "header": {
+            "logoImgAlt": "Picture of the resturants logo",
+            "chooseLangLbl": "Choose Language",
+            "swedish": "Swedish",
+            "english": "English",
+            "menuTitle": "Menu"
+        },
+        "cart": {
+            "cartImgAlt": "Cart Icon",
+            "cartTitle": "Cart",
+            "payBtn": "Pay",
+            "uHavePaid": "You have paid!"
+        },
+        "filter": {
+            "filterTitle": "Filter",
+            "price": {
+                "title": "Pricefilter",
+                "inc": "Increasing",
+                "dec": "Decreasing",
+                "sliderText": "Price"
+            },
+            "meat": {
+                "title": "Meatfilter",
+                "beef": "Beef",
+                "chicken": "Chicken",
+                "pork": "Pork",
+                "fish": "Fish",
+                "veg": "Vegetarian"
+            },
+            "allergy": {
+                "title": "Allergyfilter",
+                "gluten": "Gluten",
+                "lactose": "Lactose",
+                "egg": "Egg",
+                "shellfish": "Shellfish"
+            }
+
+        },
+        "mealsText": {
+            "meat": "Meat: ",
+            "allergies": "Allergies: ",
+            "price": "Price: ",
+
+            "meatIconText": {
+                "beefImgAlt": "Contains Beef",
+                "chickenImgAlt": "Contains Chicken",
+                "porkImgAlt": "Contains Pork",
+                "fishImgAlt": "Contains Fish",
+                "vegImgAlt": "Vegetarian"
+            },
+            "allergyIconText": {
+                "glutenImgAlt": "Contains Gluten",
+                "lactoseImgAlt": "Contains Lactose",
+                "eggImgAlt": "Contains Egg",
+                "shellfishImgAlt": "Contains Shellfish"
+            }
+        }
+    },
+    "sv": {
+        "header": {
+            "logoImgAlt": "Bild på resturangens logga",
+            "chooseLangLbl": "Välj Språk",
+            "swedish": "Svenska",
+            "english": "Engelska",
+            "menuTitle": "Meny"
+        },
+        "cart": {
+            "cartImgAlt": "Varukorgs Ikon",
+            "cartTitle": "Varukorg",
+            "payBtn": "Betala",
+            "uHavePaid": "Du har betalat!"
+        },
+        "filter": {
+            "filterTitle": "Filter",
+            "price": {
+                "title": "Prisfilter",
+                "inc": "Stigande",
+                "dec": "Fallande",
+                "sliderText": "Pris"
+            },
+            "meat": {
+                "title": "Köttfilter",
+                "beef": "Nötkött",
+                "chicken": "Kyckling",
+                "pork": "Fläskkött",
+                "fish": "Fisk",
+                "veg": "Vegetarisk"
+            },
+            "allergy": {
+                "title": "Allergifilter",
+                "gluten": "Gluten",
+                "lactose": "Laktos",
+                "egg": "Ägg",
+                "shellfish": "Skaldjur"
+            }
+
+        },
+        "mealsText": {
+            "meat": "Kött: ",
+            "allergies": "Allergier: ",
+            "price": "Pris: ",
+
+            "meatIconText": {
+                "beefImgAlt": "Innehåller Nötkött",
+                "chickenImgAlt": "Innehåller Kyckling",
+                "porkImgAlt": "Innehåller Fläskkött",
+                "fishImgAlt": "Innehåller Fisk",
+                "vegImgAlt": "Vegetarisk"
+            },
+            "allergyIconText": {
+                "glutenImgAlt": "Innehåller Gluten",
+                "lactoseImgAlt": "Innehåller Laktos",
+                "eggImgAlt": "Innehåller Ägg",
+                "shellfishImgAlt": "Innehåller Skaldjur"
+            }
+        }
+    }
+}
